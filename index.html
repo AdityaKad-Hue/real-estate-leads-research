@@ -38,14 +38,15 @@
         /* --- Mobile Responsiveness --- */
         @media (max-width: 768px) {
             .hero {
-                height: 240px;
-                padding: 15px;
+                height: auto; /* Allows the banner to stretch naturally */
+                padding: 40px 15px 70px 15px; /* Adds extra breathing room at the bottom */
             }
             .hero h1 {
                 font-size: 24px;
+                line-height: 1.4; /* Improves line spacing for better alignment */
             }
             .company-logo {
-                max-height: 30px; /* Mobile logo size - change this to make it smaller/larger on phones */
+                max-height: 70px; /* Mobile logo size - change this to make it smaller/larger on phones */
                 margin-bottom: 15px;
             }
             .container {
