@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Leads vs. Property Portal Leads</title>
+    <!-- Import Professional Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Open Sans', sans-serif; 
+            background-color: #f0f2f5; 
+            color: #333; 
+            margin: 0; 
+            padding: 0; 
+        }
+        
+        /* Real Estate Hero Graphic Header */
+        .hero {
+            background: linear-gradient(rgba(15, 32, 60, 0.8), rgba(15, 32, 60, 0.8)), 
+                        url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') center/cover;
+            height: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h1 { 
+            font-family: 'Montserrat', sans-serif; 
+            font-size: 32px; 
+            max-width: 800px;
+            margin: 0; 
+            letter-spacing: 0.5px;
+            line-height: 1.4;
+        }
+
+        /* Form Container Floating Effect */
+        .container { 
+            background: #ffffff; 
+            padding: 40px; 
+            border-radius: 12px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+            max-width: 800px; 
+            margin: -60px auto 50px auto; 
+            position: relative;
+        }
+
+        h2 { 
+            font-family: 'Montserrat', sans-serif;
+            color: #0f203c; 
+            border-bottom: 2px solid #e0e0e0; 
+            padding-bottom: 10px; 
+            margin-top: 40px; 
+            font-size: 20px;
+        }
+
+        .intro-text { 
+            background: #f8fafc; 
+            padding: 20px; 
+            border-left: 5px solid #0f203c; 
+            margin-bottom: 30px; 
+            border-radius: 0 8px 8px 0;
+            font-size: 15px;
+        }
+
+        label { 
+            display: block; 
+            font-weight: 600; 
+            margin-top: 20px; 
+            color: #2c3e50;
+        }
+
+        /* Sleek Inputs */
+        input[type="text"], input[type="number"], select, textarea { 
+            width: 100%; 
+            padding: 12px; 
+            margin-top: 8px; 
+            border: 1px solid #ccd1d9; 
+            border-radius: 6px; 
+            box-sizing: border-box; 
+            font-family: 'Open Sans', sans-serif;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus, input[type="number"]:focus, select:focus, textarea:focus {
+            border-color: #0f203c;
+            outline: none;
+        }
+
+        .radio-group { margin-top: 10px; }
+        .radio-group label { 
+            display: inline-block; 
+            font-weight: 400; 
+            margin-right: 20px; 
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        /* Professional Tables */
+        .grid-table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 15px; 
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 0 1px #e0e0e0;
+        }
+        .grid-table th, .grid-table td { 
+            padding: 12px; 
+            text-align: center; 
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .grid-table th { 
+            background-color: #0f203c; 
+            color: white;
+            font-weight: 600;
+        }
+        .grid-table tr:last-child td { border-bottom: none; }
+        .grid-table tr:hover { background-color: #f8fafc; }
+
+        /* Corporate Button */
+        button { 
+            display: block; 
+            width: 100%; 
+            background: #0f203c; 
+            color: #fff; 
+            border: none; 
+            padding: 16px; 
+            font-size: 18px; 
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            border-radius: 6px; 
+            margin-top: 40px; 
+            cursor: pointer; 
+            transition: background 0.3s, transform 0.1s;
+        }
+        button:hover { background: #1a365d; }
+        button:active { transform: scale(0.98); }
+        button:disabled { background: #95a5a6; cursor: not-allowed; }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <h1>Social Media Leads vs. Property Portal Leads</h1>
+</div>
+
+<div class="container">
+    <div class="intro-text">
+        <p><strong>Purpose:</strong> This form is part of a study to compare leads (customer enquiries) that come from social media ads and from property portals. Your experience handling these leads is very valuable. There are no right or wrong answers — please answer honestly.</p>
+        <p><strong>Confidentiality:</strong> Your answers will be kept private. Your name will not be shared with management or linked to your answers. All answers will be combined together and used only for this study.</p>
+        <p><strong>How to fill:</strong> For tick-box questions, select your choice. For questions asking you to write, 2–3 lines is enough — please write in your own words.</p>
+    </div>
+
+    <form id="research-form">
+        
+        <h2>Section A: Your Details</h2>
+        <label>Your Name:</label>
+        <input type="text" name="Name" required placeholder="Enter your full name">
+
+        <label>How many years have you worked in real estate sales?</label>
+        <input type="number" name="Years_Experience" min="0" required placeholder="e.g. 5">
+
+        <label>Roughly how many leads do you handle in a month?</label>
+        <input type="number" name="Monthly_Leads" min="0" required placeholder="e.g. 150">
+
+        <label>Which leads do you usually handle?</label>
+        <select name="Leads_Handled" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="Social Media">Social Media</option>
+            <option value="Portals">Portals</option>
+            <option value="Both">Both</option>
+        </select>
+
+        <h2>Section B: Which Leads Convert Better?</h2>
+        <label>Q1. In your experience, which type of lead is usually easier to turn into a booking?</label>
+        <div class="radio-group">
+            <label><input type="radio" name="Easier_Conversion" value="Social Media" required> Social Media</label>
+            <label><input type="radio" name="Easier_Conversion" value="Property Portal"> Property Portal</label>
+            <label><input type="radio" name="Easier_Conversion" value="No real difference"> No real difference</label>
+        </div>
+        <label>Why do you think so? (2–3 lines)</label>
+        <textarea name="Conversion_Reason" rows="3" placeholder="Briefly explain your experience..."></textarea>
+
+        <label>Q2. On average, how many times do you follow up (calls or messages) before a lead converts into a booking?</label>
+        <table class="grid-table">
+            <tr><th>Lead Source</th><th>Average Follow-ups</th></tr>
+            <tr><td style="text-align: left; padding-left: 20px;">Social Media Leads</td><td><input type="number" name="Followups_SocialMedia" min="0"></td></tr>
+            <tr><td style="text-align: left; padding-left: 20px;">Property Portal Leads</td><td><input type="number" name="Followups_Portal" min="0"></td></tr>
+        </table>
+
+        <h2>Section C: Rate the Leads</h2>
+        <p style="color: #666; font-size: 14px;">Q3. Please rate each type of lead from 1 (very poor) to 5 (excellent) on the points below.</p>
+        <table class="grid-table">
+            <tr>
+                <th style="text-align: left; padding-left: 20px;">Point to Rate (1=poor, 5=excellent)</th>
+                <th>Social Media</th>
+                <th>Property Portal</th>
+            </tr>
+            <tr>
+                <td style="text-align: left; padding-left: 20px;">Do they answer calls / reply to messages?</td>
+                <td><input type="number" name="Rate_Reply_Social" min="1" max="5"></td>
+                <td><input type="number" name="Rate_Reply_Portal" min="1" max="5"></td>
+            </tr>
+            <tr>
+                <td style="text-align: left; padding-left: 20px;">Are they serious about buying?</td>
+                <td><input type="number" name="Rate_Serious_Social" min="1" max="5"></td>
+                <td><input type="number" name="Rate_Serious_Portal" min="1" max="5"></td>
+            </tr>
+            <tr>
+                <td style="text-align: left; padding-left: 20px;">Do they know their budget / requirements?</td>
+                <td><input type="number" name="Rate_Knowledge_Social" min="1" max="5"></td>
+                <td><input type="number" name="Rate_Knowledge_Portal" min="1" max="5"></td>
+            </tr>
+            <tr>
+                <td style="text-align: left; padding-left: 20px;">How fast do they decide?</td>
+                <td><input type="number" name="Rate_Speed_Social" min="1" max="5"></td>
+                <td><input type="number" name="Rate_Speed_Portal" min="1" max="5"></td>
+            </tr>
+            <tr>
+                <td style="text-align: left; padding-left: 20px;"><strong>Overall, how good is the lead?</strong></td>
+                <td><input type="number" name="Rate_Overall_Social" min="1" max="5"></td>
+                <td><input type="number" name="Rate_Overall_Portal" min="1" max="5"></td>
+            </tr>
+        </table>
+
+        <h2>Section D: Where Leads Drop Off</h2>
+        <p style="color: #666; font-size: 14px;">Q4. At which stage do you see the most leads stop responding or drop out, for each source?</p>
+        <label>Social Media Leads:</label>
+        <select name="Dropoff_Social" required>
+            <option value="" disabled selected>Select drop-off stage...</option>
+            <option value="No reply at first contact">No reply at first contact</option>
+            <option value="Before site visit is fixed">Before site visit is fixed</option>
+            <option value="After site visit, before booking">After site visit, before booking</option>
+            <option value="During price talk">During price talk</option>
+        </select>
+        
+        <label>Property Portal Leads:</label>
+        <select name="Dropoff_Portal" required>
+            <option value="" disabled selected>Select drop-off stage...</option>
+            <option value="No reply at first contact">No reply at first contact</option>
+            <option value="Before site visit is fixed">Before site visit is fixed</option>
+            <option value="After site visit, before booking">After site visit, before booking</option>
+            <option value="During price talk">During price talk</option>
+        </select>
+
+        <h2>Section E: Budget and Property Type</h2>
+        <label>Q5. Do leads from one source usually have a different budget than the other?</label>
+        <div class="radio-group" style="display: flex; flex-direction: column;">
+            <label><input type="radio" name="Budget_Difference" value="Social media leads have lower budget"> Social media leads have lower budget</label>
+            <label><input type="radio" name="Budget_Difference" value="Social media leads have higher budget"> Social media leads have higher budget</label>
+            <label><input type="radio" name="Budget_Difference" value="Portal leads have lower budget"> Portal leads have lower budget</label>
+            <label><input type="radio" name="Budget_Difference" value="Portal leads have higher budget"> Portal leads have higher budget</label>
+            <label><input type="radio" name="Budget_Difference" value="No real difference"> No real difference</label>
+        </div>
+        <label>Any comments? (optional)</label>
+        <textarea name="Budget_Comments" rows="2" placeholder="Optional comments..."></textarea>
+
+        <label>Q6. Do leads from one source usually want a different type of home (e.g. 1BHK / 2BHK / 3BHK)?</label>
+        <div class="radio-group">
+            <label><input type="radio" name="PropertyType_Difference" value="Yes"> Yes, there is a difference</label>
+            <label><input type="radio" name="PropertyType_Difference" value="No"> No real difference</label>
+        </div>
+        <label>If yes, please explain below:</label>
+        <textarea name="PropertyType_Explanation" rows="2" placeholder="Briefly explain..."></textarea>
+
+        <h2>Section F: Cost and Your Recommendation</h2>
+        <label>Q7. Roughly what percentage of your monthly bookings come from each source? (Should add up to about 100%)</label>
+        <table class="grid-table">
+            <tr><th>Lead Source</th><th>Approx. % of My Bookings</th></tr>
+            <tr><td style="text-align: left; padding-left: 20px;">Social Media Leads</td><td><input type="number" name="Percent_Bookings_Social" min="0" max="100" placeholder="%"></td></tr>
+            <tr><td style="text-align: left; padding-left: 20px;">Property Portal Leads</td><td><input type="number" name="Percent_Bookings_Portal" min="0" max="100" placeholder="%"></td></tr>
+        </table>
+
+        <label>Q8. If the company had to spend more marketing money on one channel, which one would you suggest?</label>
+        <div class="radio-group">
+            <label><input type="radio" name="Marketing_Suggestion" value="Social Media"> Social Media</label>
+            <label><input type="radio" name="Marketing_Suggestion" value="Property Portal"> Property Portal</label>
+            <label><input type="radio" name="Marketing_Suggestion" value="Keep current mix"> Keep the current mix</label>
+        </div>
+        <label>Why? (2–3 lines)</label>
+        <textarea name="Marketing_Reason" rows="3" placeholder="Your recommendation reasoning..."></textarea>
+
+        <h2>Section G: Your Thoughts</h2>
+        <label>Q9. Is there anything else about these two lead types, or about how leads convert, that you think is important for this study?</label>
+        <textarea name="Final_Thoughts" rows="4" placeholder="Any final thoughts..."></textarea>
+
+        <button type="submit">Submit Questionnaire</button>
+    </form>
+</div>
+
+<script>
+  // VERY IMPORTANT: Replace this URL with your Google Apps Script Web App URL
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyU5e5Z57TTCO5H6WcTbhPTlJP3wBsv8oEfILzEIyuC_5jgPIPMkLaVNdKLZMv-UvmG/exec';
+  const form = document.getElementById('research-form');
+  const submitButton = form.querySelector('button[type="submit"]');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault(); 
+    submitButton.disabled = true; 
+    submitButton.innerHTML = "Submitting securely...";
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        alert("Thank you! Your response has been securely submitted.");
+        form.reset(); 
+        submitButton.disabled = false;
+        submitButton.innerHTML = "Submit Questionnaire";
+      })
+      .catch(error => {
+        console.error('Error!', error.message);
+        alert("There was an error submitting your form. Please try again.");
+        submitButton.disabled = false;
+        submitButton.innerHTML = "Submit Questionnaire";
+      });
+  });
+</script>
+
+</body>
+</html>
