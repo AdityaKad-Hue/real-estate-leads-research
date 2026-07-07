@@ -64,10 +64,14 @@
                 display: block; 
                 margin-bottom: 15px;
             }
+            /* Makes tables scrollable side-to-side on mobile */
             .grid-table {
-                display: block;
-                overflow-x: auto;
+                display: block !important;
+                width: 100%;
+                overflow-x: auto !important;
                 white-space: nowrap; 
+                -webkit-overflow-scrolling: touch; /* This unlocks smooth swiping on mobile screens */
+                padding-bottom: 10px; /* Adds a tiny bit of space at the bottom for the scrollbar */
             }
             .grid-table th, .grid-table td {
                 padding: 10px;
