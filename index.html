@@ -27,6 +27,51 @@
             color: white;
             padding: 20px;
         }
+        /* --- Logo Styling --- */
+        .company-logo {
+            max-height: 50px; /* Desktop logo size - change this to make it smaller/larger */
+            margin-bottom: 20px;
+            object-fit: contain;
+        }
+
+        /* --- Mobile Responsiveness --- */
+        @media (max-width: 768px) {
+            .hero {
+                height: 220px;
+                padding: 15px;
+            }
+            .hero h1 {
+                font-size: 24px;
+            }
+            .company-logo {
+                max-height: 30px; /* Mobile logo size - change this to make it smaller/larger on phones */
+                margin-bottom: 15px;
+            }
+            .container {
+                padding: 20px;
+                margin: -40px 15px 30px 15px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+            .intro-text {
+                padding: 15px;
+                font-size: 14px;
+            }
+            .radio-group label {
+                display: block; 
+                margin-bottom: 15px;
+            }
+            .grid-table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap; 
+            }
+            .grid-table th, .grid-table td {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
 
         .hero h1 { 
             font-family: 'Montserrat', sans-serif; 
