@@ -21,6 +21,7 @@
                         url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') center/cover;
             height: 280px;
             display: flex;
+            flex-direction: column; /* This forces the logo and text to stack vertically */
             align-items: center;
             justify-content: center;
             text-align: center;
@@ -37,7 +38,7 @@
         /* --- Mobile Responsiveness --- */
         @media (max-width: 768px) {
             .hero {
-                height: 220px;
+                height: 240px;
                 padding: 15px;
             }
             .hero h1 {
